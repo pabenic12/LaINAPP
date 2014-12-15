@@ -96,7 +96,7 @@
 						setTimeout("switchAd()",duration*1000);
 						}
 						function doLink(){
-						location.href = url[ct];
+						location.href = url[ct]; 
 						} onload = function(){
 						if (document.images)
 						switchAd();
@@ -104,10 +104,10 @@
 						//-->
 						</SCRIPT>
 
-						<A HREF="javascript:doLink();" onMouseOver="status=url[ct];return true;" 
+						<a href="javascript:doLink();" target="_blank;" onMouseOver="status=url[ct];return true;" 
 						onMouseOut="status=''">
 						<IMG NAME="Ad_Image" SRC="http://lainteractiva.com/lainmedia/apppromo/ads1.png" BORDER=0>
-						</A>
+						</a>
 
 					
 
