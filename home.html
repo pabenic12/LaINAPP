@@ -24,6 +24,8 @@
 		<script type="text/javascript" src="http://ss7.domint.net/jw6/jwplayer.js" ></script>
 		<script type="text/javascript" src="http://lainteractiva.com/m/contact-files/contact-form.js"></script>
 
+		
+
 
 </head>
 
@@ -149,23 +151,56 @@
 				<ul  class="menulink" data-role="listview" data-icon="false" >					     								    
 							<li><a href="rtsp://ss7.domint.net:2006/oc_str/camilo" data-role="close">Video En Vivo</a>
 								</li>					    
-							<li><a href="http://lainteractiva.com/laincontent/programacion.html" data-transition="pop">Programacion</a>
-								</li>
-							<li><a href="http://lainteractiva.com/laincontent/programasgrabados.html" data-transition="pop">Programas Grabados</a>
-								</li>
+							
+							<li><a href="#programacion" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Programacion</a> </li>
+
+
+							<li><a href="#grabados" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Programas Grabados</a> </li>
+
+							
+
 							<li><a href="#social-panel">Redes Sociales</a>
-								</li>
-							<li><a href="http://lainteractiva.com/laincontent/nosotros_m.html" data-transition="pop" >Nosotros</a>
-								</li>
-							<li><a href="http://lainteractiva.com/m/contact.php">Contacto</a>
-								</li>
+							</li>
+							<li><a href="#nosotros" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Nosotros</a> </li>
+
+							<li><a href="#contacto" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Contacto</a> </li>
+
+							
 														    
 				</ul>
 		
 																									 	
 	</div>			
 
+<!-- PRogramacion -->
+<div data-role="popup" id="programacion">
+<iframe src="http://lainteractiva.com/laincontent/programacion.html" seamless height="600px" width="100%"></iframe> 
+</div>
+<!-- / Programacion -->
 
+
+<!-- Programas Grabados -->
+<div data-role="popup" id="grabados">
+<iframe src="http://lainteractiva.com/laincontent/programasgrabados.html" seamless height="600px" width="100%"></iframe>
+</div>
+<!-- / Programacion -->
+
+
+<!-- Nosotros -->
+<div data-role="popup" id="nosotros">
+<iframe src="http://lainteractiva.com/laincontent/nosotros_m.html" seamless height="600px" width="100%"></iframe> 
+</div>
+<!-- / Nosotros -->
+
+
+<!-- Contacto -->
+<div data-role="popup" id="contacto">
+<iframe src="http://lainteractiva.com/m/contact.php" seamless height="600px" width="100%"></iframe>
+</div>
+<!-- / Contacto -->
+
+
+<!-- Social Media -->
 	<div data-role="panel" data-position="left" data-display="overlay" data-theme="a" id="social-panel">
 
 						
