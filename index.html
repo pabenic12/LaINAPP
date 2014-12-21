@@ -1,168 +1,246 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script> -->
-        
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script type="text/javascript">
-            $('#splash').ready() 
-            {
-                $('#main').load('#main');
-                setTimeout(function() {
-                    $('#main').ready(function() {
-                        $('#splash').remove();
-                        window.location.href = "home.html";
-                    });
-                }, 5000);
-            }
-        </script>
+<!DOCTYPE HTML>
+
+<html> 
+<head>	
+
+<!-- I NEED TO POINT THESE FILES LOCAL FOLDER and Add METADATA -->
+
+		<title>La Interactiva</title> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style_/meqtstyle.css"> 
+		<link rel="stylesheet" type="text/css" href="style_/audioplayer.css"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+		
+		<link rel="stylesheet" href="themes/lain.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src="js/audioplayer.js"></script>
+		<script type="text/javascript" src="http://ss7.domint.net/jw6/jwplayer.js" ></script>
+		<script type="text/javascript" src="http://lainteractiva.com/m/contact-files/contact-form.js"></script>
+
+		
 
 
-<style>
-#barskG{
-width:300px; 
-height: 100%;
-position: fixed;
-top: 40%;
-left: 40%;
-display:block;
-}
 
-.bars_blockG{
-background-color:#f15a24;
-border:3px solid #f15a24;
-float:left;
-height:100px;
-margin-left:15px;
-width:24px;
-opacity:0.1;
--moz-animation-name:bounceG;
--moz-animation-duration:1.6s;
--moz-animation-iteration-count:infinite;
--moz-animation-direction:linear;
--moz-transform:scale(0.7);
--webkit-animation-name:bounceG;
--webkit-animation-duration:1.6s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:linear;
--webkit-transform:scale(0.7);
--o-animation-name:bounceG;
--o-animation-duration:1.6s;
--o-animation-iteration-count:infinite;
--o-animation-direction:linear;
--o-transform:scale(0.7);
--ms-animation-name:bounceG;
--ms-animation-duration:1.6s;
--ms-animation-iteration-count:infinite;
--ms-animation-direction:linear;
--ms-transform:scale(0.7);
-animation-name:bounceG;
-animation-duration:1.6s;
-animation-iteration-count:infinite;
-animation-direction:linear;
-transform:scale(0.7);
-}
+</head>
 
-#blockG_1{
--moz-animation-delay:0.4800000000000001s;
--webkit-animation-delay:0.4800000000000001s;
--o-animation-delay:0.4800000000000001s;
--ms-animation-delay:0.4800000000000001s;
-animation-delay:0.4800000000000001s;
-}
+<body>	
 
-#blockG_2{
--moz-animation-delay:0.64s;
--webkit-animation-delay:0.64s;
--o-animation-delay:0.64s;
--ms-animation-delay:0.64s;
-animation-delay:0.64s;
-}
+<div  style="max-width:100%" data-role="page" id="menu">				 		
+<!-- Google Analytic added Pabenic -->
 
-#blockG_3{
--moz-animation-delay:0.8s;
--webkit-animation-delay:0.8s;
--o-animation-delay:0.8s;
--ms-animation-delay:0.8s;
-animation-delay:0.8s;
-}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-@-moz-keyframes bounceG{
-0%{
--moz-transform:scale(1.2);
-opacity:1}
+  ga('create', 'UA-56939412-1', 'auto');
+  ga('send', 'pageview');
 
-100%{
--moz-transform:scale(0.7);
-opacity:0.1}
+</script>
 
-}
+<!-- End of Google Analytic -->
 
-@-webkit-keyframes bounceG{
-0%{
--webkit-transform:scale(1.2);
-opacity:1}
+<!-- Header -->
 
-100%{
--webkit-transform:scale(0.7);
-opacity:0.1}
+	<div data-role="header" data-position="fixed">						
+			<div id="topLogobar">                  
+			 	 <div id="topLogo">                         
+						<img  src="img_/lain_.png" width="80%">  
+			  	</div> 
+			  <a class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-iconpos="notext" data-icon="bars" href="#nav-panel" data-role="button" role="button">Menu</a>
+			</div>              	
+	</div>  <!-- /header -->		
 
-}
+	<div style="max-height:auto;" data-role="content">								
+		<div style="width:100%; margin-bottom:0px;">								
+		<img class="lainPromo" style="margin-left:auto; margin-right:auto; display:block; max-width:100%;" src="img_/lainpromo.jpg"> 							
+		</div>										
+	</div>   		<!-- /content -->			
 
-@-o-keyframes bounceG{
-0%{
--o-transform:scale(1.2);
-opacity:1}
+				<!-- Footer -->		
+	<div data-role="footer" data-position="fixed" >			
+	
 
-100%{
--o-transform:scale(0.7);
-opacity:0.1}
-
-}
-
-@-ms-keyframes bounceG{
-0%{
--ms-transform:scale(1.2);
-opacity:1}
-
-100%{
--ms-transform:scale(0.7);
-opacity:0.1}
-
-}
-
-@keyframes bounceG{
-0%{
-transform:scale(1.2);
-opacity:1}
-
-100%{
-transform:scale(0.7);
-opacity:0.1}
-
-}
-</style> 
+			<!-- Ads -->
+		<div style="margin-bottom:10px;">								
+		<!-- 
+			<img  style="margin-left:auto; margin-right:auto; display:block; max-width:100%;" src="img_/ads.png">-->
 
 
-    </head>
-    <body>
-        <div id="splash">
-        
-                <div id="barskG">
-                        <div  id="blockG_1" class="bars_blockG">
-                        </div>
-                        <div id="blockG_2" class="bars_blockG">
-                        </div>
-                        <div id="blockG_3" class="bars_blockG">
-                        </div>
-                </div> 
+						<SCRIPT LANGUAGE="JavaScript">
+						<!--
+						//set image paths
+						src = ["http://lainteractiva.com/lainmedia/apppromo/ads1.png", "http://lainteractiva.com/lainmedia/apppromo/ads1.png", "http://lainteractiva.com/lainmedia/apppromo/ads1.png", "http://lainteractiva.com/lainmedia/apppromo/ads1.png"]
 
-            <!--Put splash here-->
-        </div>
-        <div id="main">
-                
 
-            <!-- keep empty -->
-        </div>
-    </body>
+						//set corresponding urls
+						url = ["http://solercomputer.net/", "http://solercomputer.net/", "http://solercomputer.net/", "http://solercomputer.net/"]
+
+						//set duration for each image
+						duration = 4;
+
+						//Please do not edit below
+						ads=[]; ct=0;
+						function switchAd() {
+						var n=(ct+1)%src.length;
+						if (ads[n] && (ads[n].complete || ads[n].complete==null)) {
+						document["Ad_Image"].src = ads[ct=n].src;
+						}
+						ads[n=(ct+1)%src.length] = new Image;
+						ads[n].src = src[n];
+						setTimeout("switchAd()",duration*1000);
+						}
+						function doLink(){
+						location.href = url[ct]; 
+						} onload = function(){
+						if (document.images)
+						switchAd();
+						}
+						//-->
+						</SCRIPT>
+
+						<a href="javascript:doLink();" target="_blank;" onMouseOver="status=url[ct];return true;" 
+						onMouseOut="status=''">
+						<IMG NAME="Ad_Image" SRC="http://lainteractiva.com/lainmedia/apppromo/ads1.png" BORDER=0>
+						</a>
+
+					
+
+		</div>	
+
+
+
+	<!-- / Ads -->
+
+		<!-- Audio Player -->
+		<div>
+				<div style="margin:0 0 5px; 0">			        		
+						<audio preload="auto" controls> <source src="http://radio2.domint.net:8028/;stream.mp3 "> 	</audio>				        
+						<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+				</div>	
+			
+		</div>
+
+		<div style="text-align:center">						
+			 
+				<div style="font-size:10px;">La Interactiva <script> document.write(new Date().getFullYear());	</script> <br> 
+				Una compa&#241;ia OVC Group | Diseñado por Wavecreatives Solution</div>
+			 			
+				</div> 						
+		</div>  
+	<!-- End Footer -->	
+
+
+
+
+	<!-- panels script -->			
+
+	<div data-role="panel" data-position="left" data-display="overlay" data-theme="a" id="nav-panel">
+
+    							
+    		<img  id="sidepanellogo" src="img_/logoli.png"> 
+    			<a href="#content" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close panel</a>							
+         
+				<ul  class="menulink" data-role="listview" data-icon="false" >					     								    
+							<li><!-- <a href="rtsp://ss7.domint.net:2006/oc_str/camilo" data-role="close">Video En Vivo</a> -->
+							<a href="#" onclick="videoOnline()">Video En Vivo</a> 
+							<script>
+							function videoOnline (){
+								window.open('rtsp://ss7.domint.net:2006/oc_str/camilo', '_system')
+								
+							}
+							</script>
+							</li>					    
+							
+							<li><a href="#programacion" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Programacion</a> </li>
+
+
+							<li><a href="#grabados" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Programas Grabados</a> </li>
+
+							
+
+							<li><a href="#social-panel">Redes Sociales</a>
+							</li>
+							<li><a href="#nosotros" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Nosotros</a> </li>
+
+							<li><a href="#contacto" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Contacto</a> </li>
+
+							
+														    
+				</ul>
+		
+																									 	
+	</div>			
+
+<!-- PRogramacion -->
+<div data-role="popup" id="programacion">
+<iframe src="http://lainteractiva.com/laincontent/programacion.html" seamless height="600px" width="100%"></iframe> 
+</div>
+<!-- / Programacion -->
+
+
+<!-- Programas Grabados -->
+<div data-role="popup" id="grabados">
+<iframe src="http://lainteractiva.com/laincontent/programasgrabados.html" seamless height="600px" width="100%"></iframe>
+</div>
+<!-- / Programacion -->
+
+
+<!-- Nosotros -->
+<div data-role="popup" id="nosotros">
+<iframe src="http://lainteractiva.com/laincontent/nosotros_m.html" seamless height="600px" width="100%"></iframe> 
+</div>
+<!-- / Nosotros -->
+
+
+<!-- Contacto -->
+<div data-role="popup" id="contacto">
+<iframe src="http://lainteractiva.com/m/contact.php" seamless height="600px" width="100%"></iframe>
+</div>
+<!-- / Contacto -->
+
+
+<!-- Social Media -->
+	<div data-role="panel" data-position="left" data-display="overlay" data-theme="a" id="social-panel">
+
+						
+    		<img  id="sidepanellogo" src="img_/logoli.png"> 
+    			<a href="#content" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close panel</a>							
+			         <div id="SocialNet">
+							<ul  class="menulink" data-role="listview" data-icon="false">	
+										<li>
+											<a href="https://www.facebook.com/lainteractivard" data-role="close" ><img class="SocialNetIcon" src="img_/facebook.png"><div class="socialName">Facebook</div></a>
+											</li>
+										<li><a href="https://twitter.com/lainteractivard" data-role="close"><img class="SocialNetIcon"  src="img_/twitter.png"><div class="socialName">Twitter</div></a>		    
+											</li>
+										<li>	<a href="https://www.youtube.com/channel/UCr-4pbPJ1TmgPMWGOLpnw-w/feed" target="_blank"><img class="SocialNetIcon" src="img_/youtube.png"><div class="socialName">YouTube</div></a>	
+											</li>
+										<li><a href="http://tunein.com/radio/La-Interactiva-s236209/" target="_blank"><img class="SocialNetIcon" src="img_/tunein.png"><div class="socialName">TuneIn</div></a>
+											</li>
+									<li><a href="https://plus.google.com/u/0/111095001221289684540/" target="_blank"><img class="SocialNetIcon" src="img_/google-plus.png"><div class="socialName">Google Plus</div></a></li>
+										
+																	    
+							</ul>
+					<div>
+		
+																									 	
+	</div>					
+
+
+
+</body>
+
+
+
 </html>
+
+
+
