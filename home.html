@@ -26,25 +26,6 @@
 
 		
 
-<script type="text/javascript">
-
-        // Wait for the page to load first
-        window.onload = function() {
-
-          //Get a reference to the link on the page
-          // with an id of "mylink"
-          var a = document.getElementById("envivo");
-
-          //Set code to run when the link is clicked
-          // by assigning a function to "onclick"
-          a.onclick = function() {
-     
-				window.open("http://www.w3schools.com");
-			
-            return false;
-          }
-        }
-    </script>
 
 
 </head>
@@ -170,9 +151,13 @@
          
 				<ul  class="menulink" data-role="listview" data-icon="false" >					     								    
 							<li><!-- <a href="rtsp://ss7.domint.net:2006/oc_str/camilo" data-role="close">Video En Vivo</a> -->
-							<a id="envivo" href="">linky</a> 
-							
-							
+							<a href="#" onclick="videoOnline()">Video En Vivo</a> 
+							<script>
+							function videoOnline (){
+								window.open('rtsp://ss7.domint.net:2006/oc_str/camilo', '_system')
+								
+							}
+							</script>
 							</li>					    
 							
 							<li><a href="#programacion" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Programacion</a> </li>
